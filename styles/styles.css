@@ -33,6 +33,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin: 0;
 }
 
 .blue {
@@ -63,6 +64,7 @@ body {
 .header-container {
   width: 1170px;
   margin: 0 auto;
+  min-height: 104px;
 }
 
 .navigation {
@@ -70,6 +72,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
+  min-height: 104px;
 }
 
 .navigation-link {
@@ -77,7 +80,6 @@ body {
   color: #2D3440;
   text-decoration: none;
 }
-
 
 .navigation-user-link {
   line-height: 20px;
@@ -159,4 +161,114 @@ body {
   background-repeat: no-repeat;
   background-position: center left 16px;
   border-radius: 30px;
+}
+
+.slider-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide-non-active {
+  display: none;
+}
+
+.slider-describe {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 136px;
+  margin-left: 70px;
+}
+
+.slider-title {
+  color: #2D3440;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+  margin-bottom: 48px;
+}
+
+.button {
+  min-width: 139px;
+  min-height: 44px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: #FCFCFC;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  border-radius: 40px;
+  border: none;
+}
+
+.image-active {
+  width: 367px;
+  position: relative;
+}
+
+.image-active::after {
+  content: "";
+  width: 327px;
+  height: 312px;
+  position: absolute;
+  background-color: #FFCBD8;
+  z-index: -1;
+  border-radius: 50%;
+  top: 100px;
+  left: 5px;
+}
+
+.image-non-active {
+  width: 100px;
+  position: relative;
+}
+
+.image-non-active::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #FFCBD8;
+  z-index: -1;
+  border-radius: 50%;
+  top: 30px;
+  right: 15px;
+}
+
+.button-slider {
+  background-image: url("../images/arrow-right.svg");
+  width: 38px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFCBD8;
+  border-radius: 50%;
+  outline: 2px solid #FCFCFC;
+  border: none;
+  top: 240px;
+  position: absolute;
+}
+
+.slider-next {
+  rotate: 180deg;
+  right: 20px;
+}
+
+.slider-prew {
+  right: 340px;
 }
