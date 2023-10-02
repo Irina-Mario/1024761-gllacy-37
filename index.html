@@ -295,26 +295,28 @@
     </section>
     <section class="delivery">
       <div class="delivery-container">
-        <h2 class="section-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+        <h2 class="section-title delivery-title">Доставка любимого мороженого на дом</h2>
+        <p class="delivery-text">Хочется полакомиться любимым десертом, <br>но нет времени съездить в магазин? Закажите
           доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <div class="form-wraper">
-          <p class="order">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="order-window">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="delivery-form-date">
-              <label class="delivery-form-label" for="delivery-date">Дата</label>
-              <input cclass="delivery-input" type="text" id="delivery-date" name="" placeholder="01.04.2020">
+            <div class="delivery-form-date-wraper">
+              <div class="delivery-form-date delivery-form-day">
+                <label class="delivery-form-label" for="delivery-day">Дата</label>
+                <input class="delivery-input" type="text" id="delivery-day" name="" placeholder="01.04.2020">
+              </div>
+              <div class="delivery-form-date delivery-form-phone">
+                <label class="delivery-form-label" for="delivery-phone">Телефон</label>
+                <input class="delivery-input" type="text" id="delivery-phone" name="" placeholder="+7 800 999-00-00">
+              </div>
             </div>
-            <div class="delivery-form-date">
-              <label class="delivery-form-label" for="delivery-phone">Телефон</label>
-              <input class="delivery-input" type="text" id="delivery-phone" name="" placeholder="+7 800 999-00-00">
-            </div>
-            <div class="delivery-form-date">
+            <div class="delivery-form-date delivery-form-addres">
               <label class="delivery-form-label" for="delivery-address">Адрес</label>
               <input class="delivery-input" type="text" id="delivery-address" name=""
                 placeholder="ул. Большая Конюшенная, 19/8">
             </div>
-            <button class="button-color-2" type="submit">Отправить</button>
+            <button class="button button-color-2 delivery-button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
