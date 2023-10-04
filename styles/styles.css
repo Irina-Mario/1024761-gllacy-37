@@ -650,13 +650,13 @@ body {
 
 .delivery-container {
   width: 1170px;
-  height: 534px;
   margin: 0 auto;
   position: relative;
   padding-left: 100px;
   padding-top: 167px;
   padding-bottom: 163px;
   box-sizing: border-box;
+  margin-bottom: 80px;
 }
 
 .delivery-container::after {
@@ -672,7 +672,6 @@ body {
   right: 0;
   z-index: -1;
   transform: scaleX(-1);
-
 }
 
 .delivery-title {
@@ -744,4 +743,130 @@ body {
 .delivery-button {
   display: block;
   margin: 0 auto;
+}
+
+.contacts-content {
+  background-image: url("../images/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom -80px center;
+  width: 1170px;
+  margin: 0 auto;
+  background-size: cover;
+  min-height: 492px;
+  position: relative;
+}
+
+.contacts-addres {
+  position: absolute;
+  background-color: #FCFCFC;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  top: 64px;
+  left: 64px;
+}
+
+.address-label {
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts-addres-text {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  font-style: normal;
+  width: 263px;
+  color: #2D3440;
+  margin-bottom: 24px;
+}
+
+.contacts-phone {
+  color: #2D3440;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-schedule {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  margin-bottom: 32px;
+}
+
+.feedback-button {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-style: normal;
+  padding: 12px 32px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.documents {
+  width: 356px;
+}
+
+.documents-list {
+  display: grid;
+  grid-template-columns: 150px 206px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.documents-link {
+  text-decoration: none;
+  
+  color: #2D3440;
+}
+
+.documents-item {
+  padding-left: 24px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.documents-active {
+  font-weight: 700;
+  background-image: url("../images/heart-fill.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.made-in {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+.product-link {
+  color: #2D3440;
 }
